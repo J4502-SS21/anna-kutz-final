@@ -1,0 +1,114 @@
+body {
+  background:#EEE0CB;
+  text-align: center;
+  color:black;
+  width: 100%;
+  padding-bottom: 100px;
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+.bg-img {
+  background-image: url(clothes.jpg);
+  min-height: 380px;
+  background-position: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+}
+
+.topnav {
+  overflow: auto;
+  background-color: #EEE0CB;
+  display: inline-block;
+  margin: 120px;
+  box-shadow: 1px 1px 15px #839788;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 45px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #BAA898;
+  color: black;
+}
+
+.ul {
+  list-style-type: none;
+}
+
+.li {
+  width: 100%;
+  float: left;
+  margin: 30px auto;
+  font-size: 25px;
+}
+
+a {color: Black;
+text-decoration: none;
+font-size: 28px;
+font-weight:bold;
+font-style: italic;
+}
+
+div a:hover, p a:hover {
+  color: black;
+  background-COLOR: #EEE0CB;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+h2 {
+  font-size: 28px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+p {
+  font-size: 25px;
+  margin: 20px auto;
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+img {
+  border: 0;
+  margin: 50px auto;
+  width: 100%;
+  max-width: 400px;
+  min-width: 200px;
+}
+
+section {
+  color: black;
+  background: #839788;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 30px 30px;
+  box-shadow: 1px 1px 15px Black;
+  text-align: left;
+}
+
+@media screen and (max-width: 500px) {
+  li {
+    width: auto;
+    float: left;
+    text-align: center;
+  }
+  .topnav a {
+    align-items: center;
+    text-align: center;
+}
