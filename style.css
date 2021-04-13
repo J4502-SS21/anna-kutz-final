@@ -19,15 +19,15 @@ body {
   position: relative;
 }
 
-.topnav {
+.nav {
   overflow: auto;
-  background-color: #EEE0CB;
+  background-color: #839788;
   display: inline-block;
   margin: 120px;
-  box-shadow: 1px 1px 15px #839788;
+  box-shadow: 1px 1px 15px black;
 }
 
-.topnav a {
+.nav a {
   float: left;
   color: black;
   text-align: center;
@@ -36,7 +36,7 @@ body {
   font-size: 20px;
 }
 
-.topnav a:hover {
+.nav a:hover {
   background-color: #BAA898;
   color: black;
 }
@@ -46,9 +46,9 @@ body {
 }
 
 .li {
-  width: 100%;
-  float: left;
-  margin: 30px auto;
+  width: 85%;
+  float: center;
+  margin: 20px auto;
   font-size: 25px;
 }
 
@@ -59,8 +59,8 @@ font-weight:bold;
 font-style: italic;
 }
 
-div a:hover, p a:hover {
-  color: black;
+nav a:hover, p a:hover {
+  color: white;
   background-COLOR: #EEE0CB;
 }
 
@@ -88,27 +88,158 @@ img {
   border: 0;
   margin: 50px auto;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   min-width: 200px;
 }
 
 section {
   color: black;
   background: #839788;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 30px 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 40px 40px;
   box-shadow: 1px 1px 15px Black;
-  text-align: left;
+  text-align: center;
+}
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
+
+}
+
+.timeline ul li {
+    margin-bottom: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.point {
+    min-width: 20px;
+    height: 20px;
+    background-color: #839788;
+    border-radius: 100%;
+    z-index: 2;
+    border: 3px white solid;
+    position: relative;
+    left: 1px;
+}
+
+.timeline ul li .content {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.timeline ul li:nth-child(odd) .content {
+    padding-left: 0;
+}
+
+.timeline ul li:nth-child(odd) .date {
+    padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .content {
+    padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .date {
+    padding-left: 0;
+}
+
+.timeline ul li .date {
+    width: 50%;
+    padding: 0 20px;
+    font-weight: normal;
+}
+
+.timeline ul li .date h4 {
+    background-color: white;
+    width: 100px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.timeline ul li .content h3 {
+    padding: 10px 20px;
+    background-color: #839788;
+    margin-bottom: 0;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.timeline ul li .content p {
+    padding: 10px 20px;
+    background-color: white;
+    margin-top: 0;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.timeline ul li:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline ul li:nth-child(even) .date h4 {
+    float: right
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    left: 50%;
+    background-color: #839788;
 }
 
 @media screen and (max-width: 500px) {
   li {
     width: auto;
-    float: left;
+    float: none;
     text-align: center;
   }
-  .topnav a {
+  .nav a {
     align-items: center;
     text-align: center;
+    width: 70%;
+}
+
+@media (max-width: 600px) {
+    .point {
+        min-width: 15px;
+        height: 15px;
+    }
+
+    html, body {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    html, body {
+        font-size: 14px;
+    }
+
+    .point {
+        min-width: 12px;
+        height: 12px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    html, body {
+        font-size: 10px;
+    }
+
+    p {
+        padding: 10px !important;
+    }
 }
