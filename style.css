@@ -1,5 +1,5 @@
 body {
-  background:#EEE0CB;
+  background:#Edecde;
   text-align: center;
   color:black;
   width: 100%;
@@ -99,8 +99,8 @@ font-style: italic;
 }
 
 nav a:hover, p a:hover {
-  color: white;
-  background-COLOR: #EEE0CB;
+  color: black;
+  background-COLOR: #Edecde;
 }
 
 h1 {
